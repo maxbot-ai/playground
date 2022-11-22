@@ -2,6 +2,4 @@ from maxbot_playground import bar
 
 
 def test_bar():
-    assert bar.bar() == "foo"
-
-
+    assert bar.bar() == "bar"
