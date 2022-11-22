@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "maxbot-playground"
+version = "0.1.0"
+description = ""
+authors = ["MaxbotTeamBot <alx@maxbot.ai>"]
+readme = "README.md"
+packages = [{include = "maxbot_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.2.0"
+tox = "^3.27.1"
+black = "^22.10.0"
+pre-commit = "^2.20.0"
+pytest-cov = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+maxbot_playground = "maxbot_playground.cli:main"

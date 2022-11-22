@@ -1,4 +1,4 @@
-import foo
+from maxbot_playground import foo
 
 
 def test_foo():
