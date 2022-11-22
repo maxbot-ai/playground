@@ -4,11 +4,12 @@
 
 name: Test
 
-#on: pull_request
-on: workflow_dispatch
+on:
+  workflow_dispatch: # allow manual trigger
+  pull_request:
 
 jobs:
-  codecov:
+  tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
